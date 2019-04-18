@@ -19,6 +19,10 @@ public class test_4 {
         Matcher m = p.matcher(ip);
         while(m.find()) {
         	System.out.println(m.group()); //2
-        	}
+        	} 
+            String s = "aaabbbcccddd111";
+            String rs = s.replaceAll("(.)(\\1)*","$1");
+            System.out.println(rs);  //3
+        
  }
 }
