@@ -38,5 +38,19 @@ public class test_4 {
             String str1 = sc1.nextLine();
             if(str1.matches("(.*)abc"))
            	 System.out.println("The string ends with abc "); //6
+            else 
+              	 System.out.println("The string does not ends with abc");
+                 String  s2 = "ae256dd¡ªw348e6";
+                 int[]a = new int[10];
+                 Pattern p1= Pattern.compile("(\\d)+");
+                 Matcher m1 = p1.matcher(s2);
+                 int i=0;
+                 while (m1.find()) { 
+               	  a[i] = Integer.parseInt(m1.group());
+               	  i++;
+                 }
+                 for(int c= 0;c<i;c++) {
+               	  System.out.println(a[c]);//8
  }
+}
 }
