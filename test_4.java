@@ -26,6 +26,10 @@ public class test_4 {
             String s1 = "abcabcdes";
             String rs1 = s1.replaceAll("(abc)(\\1)*","$1");
             System.out.println(rs1);  // 4
-        
+            Scanner sc= new Scanner(System.in);
+            System.out.println("Please input email :");
+            String email = sc.nextLine();
+            if (email.matches("[\\w]+@[\\w]+\\.[\\w]+"))
+            	System.out.println("The email is legal.");  //5
  }
 }
