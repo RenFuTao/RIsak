@@ -58,5 +58,13 @@ public class test_4 {
  while (m2.find()) {
 	 m2.appendReplacement(buf, "pupil"); //9
 }
+ m2.appendTail(buf);
+ System.out.println(buf);
+ String s3 = "%...%CXLL=add1,31,123.12%CXLL=add2,32,124%CXLL=,33,125.12%LL=-121.11";
+ Pattern p3 = Pattern.compile("%CXLL=.*?(?=%)");
+ Matcher m3 = p3.matcher(s3);
+ while(m3.find()) {
+	 System.out.println(m3.group()); //10
+ }
 }
 }
