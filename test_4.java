@@ -51,6 +51,12 @@ public class test_4 {
                  }
                  for(int c= 0;c<i;c++) {
                	  System.out.println(a[c]);//8
- }
+ } 
+              StringBuffer buf = new StringBuffer();
+ Pattern p2 = Pattern.compile("pupel");
+ Matcher m2 = p2.matcher("pupel and eye pupel and nose pupel");
+ while (m2.find()) {
+	 m2.appendReplacement(buf, "pupil"); //9
+}
 }
 }
