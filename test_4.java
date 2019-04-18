@@ -23,6 +23,9 @@ public class test_4 {
             String s = "aaabbbcccddd111";
             String rs = s.replaceAll("(.)(\\1)*","$1");
             System.out.println(rs);  //3
+            String s1 = "abcabcdes";
+            String rs1 = s1.replaceAll("(abc)(\\1)*","$1");
+            System.out.println(rs1);  // 4
         
  }
 }
