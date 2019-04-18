@@ -14,5 +14,11 @@ public class test_4 {
         String phone = "(1234)2516-2644";
         if (phone.matches(re)==true)
         	System.out.println("the phone number matches the (0000)0000-0000");  //1
-}
+        String ip = "111.142.33.239--412222111.12.33.238";
+        Pattern p = Pattern.compile("(\\d{1,3}\\.){3}\\d{1,3}");
+        Matcher m = p.matcher(ip);
+        while(m.find()) {
+        	System.out.println(m.group()); //2
+        	}
+ }
 }
