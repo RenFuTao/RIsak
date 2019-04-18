@@ -31,5 +31,12 @@ public class test_4 {
             String email = sc.nextLine();
             if (email.matches("[\\w]+@[\\w]+\\.[\\w]+"))
             	System.out.println("The email is legal.");  //5
+            else 
+            	System.out.println("The email is illegal");
+            Scanner sc1 = new Scanner(System.in);
+            System.out.println("Please input a string:");
+            String str1 = sc1.nextLine();
+            if(str1.matches("(.*)abc"))
+           	 System.out.println("The string ends with abc "); //6
  }
 }
